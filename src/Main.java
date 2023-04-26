@@ -76,12 +76,12 @@ public class Main {
 
     public static void task9() {
         System.out.println("Task9");
-        int savingsPerMonth = 29000;
-        int savings = 0;
+        double savingsPerMonth = 29000.0;
+        double savings = 0.0;
 
         for (int i = 1; i <= 12; i++ ) {
-            savings += savingsPerMonth;
-            System.out.println("Месяц " + i + " сумма накоплений равна " +(double) savings * 1.01 + " руб.");
+            savings += savingsPerMonth * 1.01;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + savings + " руб.");
         }
     }
 
