@@ -80,8 +80,8 @@ public class Main {
         double savings = 0.0;
 
         for (int i = 1; i <= 12; i++ ) {
-            savings += savingsPerMonth * 1.01;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + savings + " руб.");
+            savings = ( savings + savingsPerMonth ) * 1.01;
+            System.out.printf("Месяц %d сумма накоплений равна %.2f руб.\n", i, savings);
         }
     }
 
